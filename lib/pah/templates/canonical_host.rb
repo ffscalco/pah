@@ -9,7 +9,7 @@ module Pah
 use Rack::CanonicalHost, ENV['CANONICAL_HOST'] if ENV['CANONICAL_HOST']
 CANONICAL
 
-        inject_into_file 'config.ru', rack_canonical, after: "require ::File.expand_path('../config/environment', __FILE__)", verbose: false
+        inject_into_file 'config.ru', rack_canonical, after: "require_relative 'config/environment'", verbose: false
 
         git add: 'config.ru'
         git_commit 'Add rack-canonical-host.'
