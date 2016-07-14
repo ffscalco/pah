@@ -3,8 +3,8 @@ module Pah
     class RackDeflater < Pah::Template
       def call
         file = 'config/application.rb'
-        inject = "\n\n    config.middleware.use Rack::Deflater"
-        options = { after: /config\.i18n\.locale = :'.*'/, verbose: false }
+        inject = "    config.middleware.use Rack::Deflater\n\n"
+        options = { before: '    # Settings in config/environments/* take precedence over those specified here.', verbose: false }
 
         inject_into_file file, inject, options
 
