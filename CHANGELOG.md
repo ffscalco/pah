@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.0.27 (Unreleased)
+## 0.0.27 (July 18, 2016)
 - Updated ruby version to 2.3.1
 - Updated Rails version to 5.0.0
 - Removed quiet-assets gem
