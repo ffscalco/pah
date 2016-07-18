@@ -1,3 +1,3 @@
-Before('@no-travis') do
-  skip_this_scenario if ENV['CI']
+Before('@pending') do
+  skip_this_scenario
 end

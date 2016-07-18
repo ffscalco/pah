@@ -4,17 +4,17 @@ Feature: Commands
     When I run `pah --version`
     Then the output should contain:
       """
-      Pah version: 0.0.26
-      Rails version: 4.2.5
-      Ruby version: 2.2.3
+      Pah version: 0.0.27
+      Rails version: 5.0.0
+      Ruby version: 2.3.1
       """
   Scenario: -v prompts the versions
     When I run `pah -v`
     Then the output should contain:
       """
-      Pah version: 0.0.26
-      Rails version: 4.2.5
-      Ruby version: 2.2.3
+      Pah version: 0.0.27
+      Rails version: 5.0.0
+      Ruby version: 2.3.1
       """
   Scenario: without args prompt help
     When I run `pah`
