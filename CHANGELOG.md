@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.0.27 (Unreleased)
+- Updated ruby version to 2.3.1
+- Updated Rails version to 5.0.0
+- Removed quiet-assets gem
+- Updated some gems to work with rails 5 ([See this commit](https://github.com/Helabs/pah/commit/2a64ba2ecfb0c12358919b99ea903d53ee7f6f24))
+- Removed `db:test clone` task from database template. Rails 5 already takes care of that.
+
 ## 0.0.26 (May 26, 2016)
 - Fix Heroku sharing command, changed from sharing:add to access:add
 - Changed Rollbar version to 2.11.3
