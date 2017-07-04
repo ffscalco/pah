@@ -1,18 +1,16 @@
-development:
+default: &default
   adapter: postgresql
   encoding: utf8
-  database: PROJECT_development
   pool: 5
   username: postgres
   host: localhost
   template: template0
 
-test:
-  adapter: postgresql
-  encoding: utf8
+development:
+  <<: *default
+  database: PROJECT_development
+
+test: &test
+  <<: *default
   database: PROJECT_test
-  pool: 5
-  username: postgres
   min_messages: WARNING
-  host: localhost
-  template: template0
