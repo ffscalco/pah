@@ -37,7 +37,7 @@ Run:
 $ pah projectname
 ```
 
-This will create a Rails 5.0.0 app with Ruby 2.3.1. This script creates a new git repository in the folder `projectname`.
+This will create a Rails 5.0.2 app with Ruby 2.4.1. This script creates a new git repository in the folder `projectname`.
 
 :warning: PAH is not meant to be used against an existing repo.
 

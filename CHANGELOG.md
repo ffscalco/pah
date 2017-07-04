@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.0.28 (Unreleased)
+- Updated ruby version to 2.4.1
+- Updated Rails version to 5.0.2
+- Updated some gems
+- Removed gems `pry-rails` and `byebug` and added gem `pry-byebug`
+- Added sublime text files to .gitignore
+- Updated the secure_headers initializer
+- Created default pattern for database configuration
+
 ## 0.0.27 (July 18, 2016)
 - Updated ruby version to 2.3.1
 - Updated Rails version to 5.0.0
