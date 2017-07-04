@@ -11,5 +11,5 @@ Feature: README
       """
     Then I have the file README.md and contents of this file should include:
       """
-      Ruby 2.3.1
+      Ruby 2.4.1
       """

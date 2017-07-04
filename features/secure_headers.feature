@@ -4,10 +4,6 @@ Feature: Secure Headers
     Given I have created the app "myapp" with pah
 
   Scenario: Have correct files
-    Then I have the file app/controllers/application_controller.rb and contents of this file should include:
-      """
-      ensure_security_headers
-      """
     Then I have a config/initializers/secure_headers.rb
     Then I have the file config/initializers/secure_headers.rb and contents of this file should include:
       """
